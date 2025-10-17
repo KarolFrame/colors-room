@@ -1,4 +1,8 @@
-<div>
-  <h1 class="text-text-light text-xl">{{ sectionName }}</h1>
-  <p class="mt-5 border-2 border-accent-main"></p>
+<div class="mb-4">
+  <h1
+    class="text-xl"
+    [ngClass]="{ 'text-accent-main': inSection, 'text-accent-secondary': !inSection }"
+  >
+    {{ sectionName }}
+  </h1>
 </div>

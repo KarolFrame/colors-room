@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ContentGamesCarousel } from './content-games-carousel';
 
 describe('ContentGamesCarousel', () => {
