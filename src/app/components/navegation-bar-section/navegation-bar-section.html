@@ -1,7 +1,10 @@
 <div class="mb-4">
   <h1
-    class="text-xl"
-    [ngClass]="{ 'text-accent-main': inSection, 'text-accent-secondary': !inSection }"
+    class="text-xl font-bold"
+    [ngClass]="{
+      'text-accent-main': inSection,
+      'text-accent-secondary': !inSection
+    }"
   >
     {{ sectionName }}
   </h1>

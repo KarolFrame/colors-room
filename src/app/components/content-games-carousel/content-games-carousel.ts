@@ -9,6 +9,7 @@ import {
   CarouselItemComponent
 } from '@coreui/angular';
 import { CarouselCustomConfig } from './carousel.config';
+import { title } from 'process';
 
 
 @Component({
@@ -28,13 +29,16 @@ export class ContentGamesCarousel implements OnInit{
   slides: any[] = new Array(3).fill({ id: -1, src: '', title: '', subtitle: '' });
   ngOnInit(): void {
     this.slides[0] = {
-      src: './assets/img/banners/eonBanner.png'
+      src: './assets/img/banners/eonBanner.png',
+      title: "Echoes of Night"
     };
     this.slides[1] = {
-      src: './assets/img/banners/slBanner.png'
+      src: './assets/img/banners/slBanner.png',
+      title: "Shader Lukers"
     };
     this.slides[2] = {
-      src: './assets/img/banners/veronicaBanner.png'
+      src: './assets/img/banners/veronicaBanner.png',
+      title: "Veronica"
     };
   }
 

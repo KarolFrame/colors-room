@@ -2,3 +2,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+app-background-particles {
+    background-color: transparent !important;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: transparent !important;
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    align-items: start;
+    z-index: 1;
+}
+
+#content-wrap {
+    flex: 1;
+}
+
+.footer {
+    padding: 2rem 0;
+    text-align: center;
+}

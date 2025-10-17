@@ -9,8 +9,8 @@ module.exports = {
         'background': '#0b0d19',
         'text-light': '#d0d0d5', 
         'primary': '#0F3460',
-        'accent-main': '#ff2fd6',
-        'accent-secondary': '#00eaff',
+        'accent-main': '#0069b4',
+        'accent-secondary': '#ecececff',
         'border-color': '#1a1e2e',
       },
       fontFamily: {

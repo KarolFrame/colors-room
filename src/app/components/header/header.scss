@@ -1,7 +1,12 @@
 a {
   font-family: 'Exo 2', sans-serif;
+  transition: 0.3s;
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 
+
 svg{
-    color: white;
+  color: white;
 }

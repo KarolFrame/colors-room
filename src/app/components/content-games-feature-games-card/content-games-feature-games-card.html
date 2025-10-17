@@ -1,0 +1,11 @@
+<div
+  class="card"
+  [ngClass]="{
+    'card--blue-border': borderColor === 'blue',
+    'card--pink-border': borderColor === 'pink',
+    'card--purple-border': borderColor === 'purple'
+  }"
+>
+  <img class="w-full" src="{{ cardImg }}" />
+  <h2 class="my-2 text-2xl w-full text-center text-text-light">{{ cardName }}</h2>
+</div>
