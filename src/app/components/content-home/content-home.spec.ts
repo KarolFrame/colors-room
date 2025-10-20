@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BackgroundParticles } from './background-particles';
+import { ContentHome } from './content-home';
 
-describe('BackgroundParticles', () => {
-  let component: BackgroundParticles;
-  let fixture: ComponentFixture<BackgroundParticles>;
+describe('ContentHome', () => {
+  let component: ContentHome;
+  let fixture: ComponentFixture<ContentHome>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BackgroundParticles]
+      imports: [ContentHome]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BackgroundParticles);
+    fixture = TestBed.createComponent(ContentHome);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

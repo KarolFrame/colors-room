@@ -3,15 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-app-background-particles {
-    background-color: transparent !important;
-}
-
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: transparent !important;
+    background-color: #010101;
 }
 
 #page-container {

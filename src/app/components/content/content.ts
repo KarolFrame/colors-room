@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { Header } from "../header/header";
-import { NavegationBar } from "../navegation-bar/navegation-bar";
 
 @Component({
   selector: 'app-content',
-  imports: [Header, NavegationBar],
+  imports: [Header],
   templateUrl: './content.html',
   styleUrl: './content.scss'
 })
