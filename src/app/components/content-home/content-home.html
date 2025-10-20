@@ -1,6 +1,19 @@
-<div class="text-center w-full h-[70vh] flex flex-col justify-center items-center">
-  <h1 class="text-text-light text-9xl">WELCOME TO</h1>
-  <h1 class="text-text-light text-9xl">COLORS ROOM</h1>
-  <h2 class="text-text-light text-4xl mt-5">GAME DEVELOPMENT STUDIO</h2>
-  <button class="interact-button font-bold mt-12 rounded-lg">LEARN MORE</button>
+@if(show){
+<div
+  [@slideIn]
+  class="text-center w-full lg:h-[60vh] flex flex-col justify-center items-center p-4"
+>
+  <h1 class="text-text-light text-5xl md:text-7xl lg:text-9xl font-extrabold leading-none">
+    WELCOME TO
+  </h1>
+  <h1 class="text-text-light text-5xl md:text-7xl lg:text-9xl font-extrabold leading-none">
+    COLORS ROOM
+  </h1>
+  <h2 class="text-text-light text-lg md:text-2xl lg:text-4xl mt-5 font-light tracking-wide">
+    GAME DEVELOPMENT STUDIO
+  </h2>
+  <button class="interact-button font-bold mt-8 md:mt-12 rounded-lg px-6 py-3 text-sm md:text-base">
+    LEARN MORE
+  </button>
 </div>
+}

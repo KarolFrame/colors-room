@@ -1,4 +1,5 @@
-<div class="mt-8 flex flex-col h-[60vh] flex items-center justify-center">
+@if(show){
+<div [@slideIn] class="mt-8 flex flex-col h-[60vh] flex items-center justify-center">
   <h1 class="w-full text-center text-accent-secondary text-5xl font-bold mb-8">FEATURE GAMES</h1>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
     <app-content-games-feature-games-card
@@ -8,3 +9,4 @@
     />
   </div>
 </div>
+}
