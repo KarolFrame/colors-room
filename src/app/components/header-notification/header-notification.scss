@@ -1,0 +1,7 @@
+span{
+    font-family: 'Exo 2', sans-serif;
+}
+
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}

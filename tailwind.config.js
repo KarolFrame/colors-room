@@ -18,7 +18,21 @@ module.exports = {
         'heading': ['Exo 2', 'sans-serif'], 
         'mono': ['Roboto Mono', 'monospace'],
       },
+      animation: {
+  marquee: 'marquee 30s linear infinite',
+},
+keyframes: {
+  marquee: {
+    '0%': { transform: 'translateX(0%)' },
+    '100%': { transform: 'translateX(-50%)' },
+  },
+},
     },
   },
   plugins: [],
+  variants: {
+    extend: {
+      animation: ['hover', 'focus'],
+    }
+  },
 }

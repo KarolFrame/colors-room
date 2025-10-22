@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ContentGamesCarousel } from './content-games-carousel';
 
-describe('ContentGamesCarousel', () => {
-  let component: ContentGamesCarousel;
-  let fixture: ComponentFixture<ContentGamesCarousel>;
+import { ContentContact } from './content-contact';
+
+describe('ContentContact', () => {
+  let component: ContentContact;
+  let fixture: ComponentFixture<ContentContact>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContentGamesCarousel]
+      imports: [ContentContact]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ContentGamesCarousel);
+    fixture = TestBed.createComponent(ContentContact);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

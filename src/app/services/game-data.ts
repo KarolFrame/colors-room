@@ -21,7 +21,7 @@ export interface Game{
 export class GameDataService {
   games: Game[] = [
     {
-      name:"Echoes of Night",
+      name:"Echoes Of Night",
       description:"",
       img:"/assets/img/banners/eonBanner.png",
       link:"https://store.steampowered.com/app/3576720/Echoes_Of_Night_The_Exodus_of_the_Stars/?l=latam",
