@@ -8,7 +8,7 @@ module.exports = {
       colors: {
         'background': '#000000ff',
         'text-light': '#ebebebff', 
-        'primary': '#fbd70a',
+        'primary': '#fbcf0aff',
         'accent-main': '#fbd70a',
         'accent-secondary': '#ecececff',
         'border-color': '#1a1e2e',
@@ -19,14 +19,14 @@ module.exports = {
         'mono': ['Roboto Mono', 'monospace'],
       },
       animation: {
-  marquee: 'marquee 30s linear infinite',
-},
-keyframes: {
-  marquee: {
-    '0%': { transform: 'translateX(0%)' },
-    '100%': { transform: 'translateX(-50%)' },
-  },
-},
+        marquee: 'marquee 30s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
     },
   },
   plugins: [],

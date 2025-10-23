@@ -1,1 +1,33 @@
-<p>content-about-us works!</p>
+@if(show){
+<div class="relative w-full overflow-hidden bg-black h-[60vh]">
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="min-w-full min-h-full w-auto h-auto object-cover absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+  >
+    <source src="assets/video/colors_rooms_indie_studio.webm" type="video/webm" />
+    <source src="assets/video/colorsroom_gem_awards.mp4" type="video/mp4" />
+  </video>
+  <div class="absolute inset-0 bg-black/50 z-10"></div>
+  <div
+    [@slideIn]
+    class="relative z-20 text-start w-full h-full flex flex-col justify-end items-start p-4"
+  >
+    <h1 class="text-white text-5xl md:text-7xl lg:text-9xl font-extrabold leading-none">
+      MEET OUR
+    </h1>
+    <h1 class="text-white text-5xl md:text-7xl lg:text-9xl font-extrabold leading-none">TEAM</h1>
+  </div>
+</div>
+<div class="people-section relative w-full overflow-hidden bg-primary">
+  <div class="absolute inset-0 z-10"></div>
+  <div
+    [@slideIn]
+    class="relative z-20 text-start w-full h-full flex flex-col justify-end items-start p-8"
+  >
+    <app-about-us-people />
+  </div>
+</div>
+}

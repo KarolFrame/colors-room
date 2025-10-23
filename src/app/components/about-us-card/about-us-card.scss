@@ -1,0 +1,15 @@
+.card {
+    position: relative; 
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 0;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+h2{
+    font-family: 'Roboto Mono', sans-serif;
+}

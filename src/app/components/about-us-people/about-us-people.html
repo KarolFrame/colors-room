@@ -1,0 +1,9 @@
+<div class="grid-container">
+  <app-about-us-card
+    *ngFor="let person of people"
+    [name]="person.name"
+    [img]="person.img"
+    [description]="person.description"
+    [job]="person.job"
+  />
+</div>
