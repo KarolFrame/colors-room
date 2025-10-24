@@ -8,6 +8,13 @@ export interface Person{
   img: string;
   job: string;
 }
+export interface Collaborator{
+  name: string;
+  job: string;
+}
+export interface ExternalContributor{
+  name:string;
+}
 
 @Injectable({
   providedIn: 'root'
@@ -45,16 +52,87 @@ export class PeopleDataService {
       job:"3D Artist"
     },
     {
-      name:"Daniel",
+      name:"Ana María Talavera",
+      description:"2D Animator",
+      img:"https://codaio.imgix.net/docs/AHFp76avVo/blobs/bl-IAJErBQixP/24a402856242a0ad4e5b61147866cc5043a8aabfcadcbe2c02144b8e0b675626f89674000e103f2e1712363f01351a28a5e0ae86d3294f7c4640eab0766d42cd7ae4313a47cc1f9b1db130f9a9b12b477f24d72d3eab73d314217fa488f6ff8ce9ab4ad3?fit=max&fm=webp&lossless=true",
+      job:"2D Animator"
+    },
+    {
+      name:"Daniel Haynes",
       description:"Sound Designer",
       img:"https://codaio.imgix.net/docs/AHFp76avVo/blobs/bl-Mt8vWVpCSR/ec3b4e160049fadeb6cea568a59d76cebe32b4ab1afe9a3e8e5db484f6703a87a499012f6afdba1bcf526441eea9d1e714e0ed38d8661afa3c373a1c1cba734c915eab799034e0115aba8256d809148cba5148b0ec46e634acbe18f82f2e6178eec2bd84?fit=max&fm=webp&lossless=true",
       job:"Sound Designer"
     },    
   ];
 
+  collaborators:Collaborator[] =[
+    {
+      name: "Curro Pérez",
+      job:"3D Artist"
+    },
+    {
+      name: "Carlos León",
+      job:"3D Artist"
+    },
+    {
+      name: "Daniel Arnal",
+      job:"Concept Artist"
+    },
+    {
+      name: "Amanda Romero",
+      job:"3D Artist"
+    },
+  ];
+
+  externalContributors: ExternalContributor[] = [
+    {
+      name:"Jose Ruiz"
+    },
+    {
+      name:"Francisco Manuel"
+    },
+    {
+      name:"Antonio Mesa"
+    },
+    {
+      name:"Toni García"
+    },
+    {
+      name:"Ángel Oliver"
+    },
+    {
+      name:"Nacho Toro"
+    },
+    {
+      name:"Antonio Gonzalez"
+    },
+    {
+      name:"Ana Fernandez"
+    },
+    {
+      name:"Daniel Romero"
+    },
+    {
+      name:"Maria Barranco"
+    },
+    {
+      name:"Jesus Bonilla"
+    },
+    {
+      name:"Ana Isabel Pérez"
+    },
+  ];
+
+
   constructor(){};
 
   getPeople(): Person[]{
     return this.people;
+  }
+  getCollaborators(): Collaborator[]{
+    return this.collaborators;
+  }
+  getExternalContributors(): ExternalContributor[]{
+    return this.externalContributors;
   }
 }

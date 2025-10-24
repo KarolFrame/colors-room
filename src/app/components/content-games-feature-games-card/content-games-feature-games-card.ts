@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class ContentGamesFeatureGamesCard {
   @Input() cardName!: string;
   @Input() cardImg!: string;
+  @Input() cardLink!: string;
 }

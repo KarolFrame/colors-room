@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate, query, stagger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
+import { PathDataService } from '../../services/path-data';
 
 @Component({
   selector: 'app-content-home',
@@ -26,7 +27,10 @@ import { CommonModule } from '@angular/common';
 export class ContentHome implements OnInit{
   show = false;
 
+  constructor(private pathServices: PathDataService){}
+
   ngOnInit() {
-    this.show = true; 
+    this.show = true;
+    this.pathServices.setActivePath("/");
   }
 }

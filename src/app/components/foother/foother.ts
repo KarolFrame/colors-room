@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Link, SocialMediaDataService } from '../../services/social-media-data';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-foother',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './foother.html',
   styleUrl: './foother.scss'
 })

@@ -1,0 +1,8 @@
+<div class="bg-primary p-6 mb-9">
+  <h1 class="text-end text-white text-3xl md:text-5xl lg:text-6xl font-extrabold leading-none">
+    EXTERNAL CONTRIBUTOTS
+  </h1>
+  <div class="text-center grid-container grid-cols-3 md:grid-cols-6 mt-5">
+    <app-about-us-card class="h-full" *ngFor="let exter of externals" [name]="exter.name" />
+  </div>
+</div>

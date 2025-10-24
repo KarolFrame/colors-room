@@ -1,5 +1,6 @@
-<div class="grid-container">
+<div class="grid-container grid-cols-1 md:grid-cols-4">
   <app-about-us-card
+    class="h-full"
     *ngFor="let person of people"
     [name]="person.name"
     [img]="person.img"

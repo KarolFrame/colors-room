@@ -2,10 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate, query, stagger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { AboutUsPeople } from "../about-us-people/about-us-people";
+import { AboutUsCollaborators } from '../about-us-collaborators/about-us-collaborators';
+import { AboutUsExternals } from '../about-us-externals/about-us-externals';
+import { PathDataService } from '../../services/path-data';
 
 @Component({
   selector: 'app-content-about-us',
-  imports: [CommonModule, AboutUsPeople],
+  imports: [CommonModule, AboutUsPeople, AboutUsCollaborators, AboutUsExternals],
   templateUrl: './content-about-us.html',
   styleUrl: './content-about-us.scss',
   animations: [
@@ -26,7 +29,10 @@ import { AboutUsPeople } from "../about-us-people/about-us-people";
 export class ContentAboutUs implements OnInit{
   show = false;
 
+  constructor(private pathServices:PathDataService){}
+
   ngOnInit() {
-    this.show = true; 
+    this.show = true;
+    this.pathServices.setActivePath("/aboutus");
   }
 }

@@ -1,0 +1,13 @@
+<div class="bg-primary p-6 mb-9">
+  <h1 class="text-black text-3xl md:text-5xl lg:text-6xl font-extrabold leading-none">
+    PROJECT COLLABORATORS
+  </h1>
+  <div class="text-center grid-container grid-cols-2 md:grid-cols-4 mt-5">
+    <app-about-us-card
+      class="h-full"
+      *ngFor="let collab of collabs"
+      [name]="collab.name"
+      [job]="collab.job"
+    />
+  </div>
+</div>

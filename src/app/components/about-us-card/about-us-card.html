@@ -1,5 +1,9 @@
-<div class="card w-full bg-black p-3 flex flex-col items-center">
-  <img class="w-[80%] mb-5" src="{{ img }}" />
+<div class="card h-full w-full bg-black p-3 flex flex-col items-center justify-center">
+  @if(img){
+  <img class="w-[80%] mb-5 rounded-full" src="{{ img }}" />
+  }
   <h1 class="text-text-light">{{ name }}</h1>
-  <h2 class="text-primary">{{ job }}</h2>
+  @if(job){
+  <h2 class="text-primary text-center lg:text-sm">{{ job }}</h2>
+  }
 </div>

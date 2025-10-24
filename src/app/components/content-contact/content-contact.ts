@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate, query, stagger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
+import { PathDataService } from '../../services/path-data';
 
 @Component({
   selector: 'app-content-contact',
@@ -24,9 +25,10 @@ import { CommonModule } from '@angular/common';
 })
 export class ContentContact implements OnInit {
   show = false;
-  constructor(){};
+  constructor(private pathServices:PathDataService){};
 
   ngOnInit(): void {
     this.show = true;
+    this.pathServices.setActivePath("/contact");
   }
 }
