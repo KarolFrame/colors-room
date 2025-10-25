@@ -33,6 +33,7 @@
     "@angular/router": "^20.3.6",
     "@angular/ssr": "^20.3.6",
     "@coreui/angular": "^5.5.17",
+    "@netlify/angular-runtime": "^2.4.0",
     "express": "^5.1.0",
     "ng-particles": "^3.12.0",
     "rxjs": "~7.8.0",
