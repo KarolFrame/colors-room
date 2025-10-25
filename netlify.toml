@@ -1,5 +1,5 @@
 [build]
-  publish = "dist/tu-proyecto"
+  publish = "dist/colors-room"
   command = "ng build --prod --base-href=/"
 
 [[redirects]]
