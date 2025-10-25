@@ -1,6 +1,6 @@
 [build]
   publish = "dist/colors-room/browser"
-  command = "ng build --prod --base-href=/"
+  command = "ng build --base-href=/"
 
 [[redirects]]
   from = "/*"
