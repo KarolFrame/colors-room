@@ -1,0 +1,8 @@
+[build]
+  publish = "dist/tu-proyecto"
+  command = "ng build --prod --base-href=/"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
