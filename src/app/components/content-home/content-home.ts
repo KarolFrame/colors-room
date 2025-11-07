@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID, AfterViewInit } from '@angular/core';
 import { trigger, state, style, transition, animate, query, stagger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { PathDataService } from '../../services/path-data';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-content-home',
@@ -27,10 +28,21 @@ import { PathDataService } from '../../services/path-data';
 export class ContentHome implements OnInit{
   show = false;
 
-  constructor(private pathServices: PathDataService){}
+  constructor(private pathServices: PathDataService, @Inject(PLATFORM_ID) private platformId: Object){}
 
   ngOnInit() {
     this.show = true;
     this.pathServices.setActivePath("/");
   }
+
+  ngAfterViewInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      const videos = document.querySelectorAll('video');
+      videos.forEach(v => {
+        v.muted = true;
+        v.volume = 0;
+      });
+    }
+  }
+
 }

@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID, AfterViewInit } from '@angular/core';
 import { trigger, state, style, transition, animate, query, stagger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { AboutUsPeople } from "../about-us-people/about-us-people";
 import { AboutUsCollaborators } from '../about-us-collaborators/about-us-collaborators';
 import { AboutUsExternals } from '../about-us-externals/about-us-externals';
 import { PathDataService } from '../../services/path-data';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-content-about-us',
@@ -29,10 +30,19 @@ import { PathDataService } from '../../services/path-data';
 export class ContentAboutUs implements OnInit{
   show = false;
 
-  constructor(private pathServices:PathDataService){}
+  constructor(private pathServices:PathDataService, @Inject(PLATFORM_ID) private platformId: Object){}
 
   ngOnInit() {
     this.show = true;
     this.pathServices.setActivePath("/aboutus");
+  }
+  ngAfterViewInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      const videos = document.querySelectorAll('video');
+      videos.forEach(v => {
+        v.muted = true;
+        v.volume = 0;
+      });
+    }
   }
 }
