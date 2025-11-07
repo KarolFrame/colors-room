@@ -13,8 +13,8 @@ import { CommonModule } from '@angular/common';
 export class AboutUsCollaborators {
   collabs: Collaborator[] = [];
   
-    constructor(private peopleDataService:PeopleDataService){}
-    ngOnInit(): void {
-      this.collabs = this.peopleDataService.getCollaborators();
-    }
+  constructor(private peopleDataService:PeopleDataService){}
+  ngOnInit(): void {
+    this.collabs = this.peopleDataService.getCollaborators();
+  }
 }
